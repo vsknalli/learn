@@ -1,0 +1,9 @@
+MAai@123i
+
+myselfandopensource@gmail.com
+
+jenkins master slave configuration:
+------------------------------------------------
+https://www.youtube.com/watch?v=hwrYURP4O2k -DevOps 05 - Jenkins Master Slave Configuration | How to setup Jenkins master and
+https://github.com/miztiik/DevOps-Demos.git
+
