@@ -11,3 +11,12 @@ https://github.com/miztiik/DevOps-Demos.git
 
 AWS LEANRING BY SENTHIL FROM TODAY ONWARDS IN ANOTHER TWO DAYS
 ==============================================================
+
+EC2 Instance:
+=============
+1) Renting Virtual Machines(EC2)
+2) Storing Data on Virtual drives (EBS)
+3) Distributing load accross machies (ELB)
+4) Scalling the services using on auto-scalling group (ASG)
+
+
