@@ -35,7 +35,7 @@ pipeline{
 
 
 
-User defined variables:
+User defined variables: (Global Level)
 ==================
 
 pipeline{
@@ -51,4 +51,28 @@ pipeline{
         }
     }
 }
+
+
+
+Declaring user defined variables in (Stage Level)
+===========================
+pipeline{
+    agent any
+    stages{
+        stage("User defined variable"){
+            environment{
+                ToolName="Jenkins"
+            }
+            steps{
+                echo "Tool name is : $ToolName"
+            }
+        }
+    }
+}
+
+
+
+
+We can use the "environment"  section in the step level variable declaration, alternatively we can use "script" , script is the section we can use while we declare the 
+variable in step level.
 
