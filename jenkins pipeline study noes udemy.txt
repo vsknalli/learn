@@ -1,0 +1,54 @@
+Pipeline Example:
+================
+
+node{
+    echo "Welcome to jenkins pipeline"
+}
+
+hello World:
+==========
+
+pipeline{
+    agent any
+    stages{
+        stage("Hello World"){
+            steps{
+                echo "Hello world"
+            }
+        }
+    }
+}
+
+predefined variable:
+================
+
+pipeline{
+    agent any
+    stages{
+        stage("pre"){
+            steps{
+                echo "Current BuildNumber : $BUILD_NUMBER"
+            }
+        }
+    }
+}
+
+
+
+User defined variables:
+==================
+
+pipeline{
+    agent any
+    environment{
+        ToolName="Jenkins"
+    }
+    stages{
+        stage("User defined variable"){
+            steps{
+                echo "Tool name is : $ToolName"
+            }
+        }
+    }
+}
+
