@@ -1,6 +1,44 @@
 what are the issues you faced and resolved during your sonar, maven pipleline in jenkins ?
+
+
 What is the use of pipeline you guys are using in your project ?
-what are the lifecycles of maven  in pipeline?
+Pipeline script is what why needed?
+Pipeline script is another way of Job configuration with the help of code 
+advantanges: 
+            1) we can devide the job into different stages(build/test/Depoly) and each part can run on each agent 
+            2) parrallel execution of stages are easy configure so that we can save time
+            3) Each stage can execute with different version of JDK/MVN Versions
+            4) If any stage is faild we can restart the state alone instead of doing from bengining
+            5) We can visuvalize the stage in jenkins dashboard
+            6) Build can hold for user input (approvels..like that)
+            7) we can do the Version control of code , if the code fails we can easily revert the old stage 
+            8) Pause, and restart the Build
+            9) In multibranch pipeline scripts will automatically creates in sub-branches   
+what are the different types of pipeline script? and difference between them?
+Type:
+=====
+1)Declarative 2) Pipeline 
+* Difference between Declarative and pipeline:
+    Declarative pipline is recent addition to the jenkins
+    Declarative is very easy when compared with Scripted 
+    Declarative allways starts with "pipeline" whereas 
+    scripted pipeline starts with the keyword called "node"
+
+AGENT  --> SRAGES  --> STAGE  -->  STEPS 
+
+
+Variables:
+===========
+1) pre defined 
+https://<ipaddress>:8080/env-vars.html --> we can get the predefined varaibles 
+
+2) user defined 
+
+
+
+
+
+what are the lifecycles of maven in pipeline?
 what is pom.xml in maven ?
 what is purpose of maven command and dependencies  ?
 what is the location maven file saving in the server ?
