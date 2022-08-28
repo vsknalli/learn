@@ -7,6 +7,10 @@ jenkins master slave configuration:
 https://www.youtube.com/watch?v=hwrYURP4O2k -DevOps 05 - Jenkins Master Slave Configuration | How to setup Jenkins master and
 https://github.com/miztiik/DevOps-Demos.git
 
+
+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
+vsknalli@gmail.com --> github tocken 
+
 ===============================================================================
 
 AWS LEANRING BY SENTHIL FROM TODAY ONWARDS IN ANOTHER TWO DAYS
