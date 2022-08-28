@@ -1,1 +1,7 @@
 Senthil Ansible study notes
+
+
+ANSIBLE_CONFIG              ---> Environment variable Set
+ansible.cfg                 ---> In current Working directory
+~/.ansible.cfg              ---> users home directory
+/etc/ansible/ansible.cfg    ---> System wide directory
