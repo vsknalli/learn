@@ -1,0 +1,11 @@
+---
+ - hosts: mhost1 
+   vars:
+         list:
+           - item1
+           - item2
+           - item3
+   tasks:
+        - name: Displaying variable value
+          debug:
+              msg: "{{ list[2] }}"

@@ -1,0 +1,6 @@
+---
+ - hosts: mhost1
+   tasks:
+         - name: Displaying facts variables
+           debug:
+                   msg: "{{ ansible_nodename }}"
