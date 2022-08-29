@@ -1,8 +1,0 @@
----
- - hosts: mhost1
-   vars:
-           key: value
-   tasks:
-           - name: Displaying variable
-             debug:
-                     msg: "{{ key }}"
