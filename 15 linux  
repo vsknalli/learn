@@ -1,0 +1,13 @@
+What is the purpose of having different network ports?
+Let say you have server A with 2 service running on it 
+1) DNS service 
+2) NFS service 
+Now if you want to communicate with the server yes we can connetc with server IP , but we can not 
+communicate all the services running  on the server with the same server IP , Thats why we need different ports .
+            So when you want to communicate with the server and you wnat to talk to the DNS service , then the DNS serice have its own dedicated ports , that port is 53 
+
+            same way if we want to communicate with the NFS service on the same server then we can use server IP along with  NFS port (2049)
+Thasts why we are having different port in one server and its use.            
+
+
+
