@@ -1,0 +1,84 @@
+1) What is the purpose of having different network ports?
+Let say you have server A with 2 service running on it 
+1) DNS service 
+2) NFS service 
+Now if you want to communicate with the server yes we can connetc with server IP , but we can not 
+communicate all the services running  on the server with the same server IP , Thats why we need different ports .
+            So when you want to communicate with the server and you wnat to talk to the DNS service , then the DNS serice have its own dedicated ports , that port is 53 
+
+            same way if we want to communicate with the NFS service on the same server then we can use server IP along with  NFS port (2049)
+Thasts why we are having different port in one server and its use.
+
+
+2) What are the fields in /etc/passwd?
+Every time we create a user the user information will be saved in /etc/passwd file 
+=================================
+1 field stars with username
+2 field x - means passwd but the password is not there , bcs passwd is in /etc/shadow in enrepted format
+3 field is userid 
+4 field is group id 
+5 field is user description
+6 field is for Home directory 
+7 field is for shell , user's default shell entry 
+=================================
+
+3) explain the cronjob syntax? if the cron job is not run how  you trubleshoot ?
+Inorder to run the cronjob we need to run # crontab -e (-e for edit)
+Once we run it will open a kind of vi or vim editor 
+=================================
+First field - minites
+secound field - Hour
+Third field - Day of the month
+Fourh field - month 
+fith field - day of the week  
+=================================
+Troubleshoot:
+============= we need to cheek the cronjob logs /var/log/cron & /var/log/messages
+we can actually check our mail as well             
+sometime user did some mistakes in syntax of cron , which also leads some failure 
+what is goin to executable also matters in cron , we need to check on that we well .
+
+Linux Boot process :
+====================
+* The systemd is the new service manager in Cent 
+* Systemd is backward compatiable sicne it runs init script/command also works
+* Every system administrarot needs to understand the boot process of an OS in order to troubleshoot     more effectively, suppose if the sysem doesn't boot 
+
+As soon as we power on the machine/server it actually has firmware in it (That firmware not actually releated with Operating system) actually comes with manufacture, its preinstalled on it , That firmware is called BIOS (Basic Input and Output settins) ..it takes up and goed to the POST process 
+POST proces is power on self test it checks all the hardware attached to the system , if all are OK Then 
+
+MBR (Master boot Record) is loaded, This information is saved in the first sector of the har disk 
+which indicates where the GRUB2 is located , it can be loaded into computer RAM. 
+
+GRUB2 (Grand Unified Boot loader), Basically the GRUB2 jobs is load the Linux kernel , that information is in /boot , /grub2, /grup2.cfg which is the config file , which loads all required files and drivers from initrd.img file and its starts the very first OS Operating system procss that is called "systemd"
+this is the first process that system starts up by default its given the process id "1"
+systemd starts other required process we well  
+
+And it reaches /etc/systemd target file this to bring the system to the run level , total which has 7 run levels 0 - 6 .  all run levels are defined in /etc/systemd/default.target file and system get into Login prompt 
+============================================ * =====================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
