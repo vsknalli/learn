@@ -24,3 +24,4 @@ EC2 Instance:
 4) Scalling the services using on auto-scalling group (ASG)
 
 
+-
