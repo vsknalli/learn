@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+        name: hello-world-python
+        labels: 
+             env: dev
+             client: xyz
+             datacenter: denver
+spec: 
+        containers:
+          - name: hello-world-python-con1
+            image: vsknalli/hello-world-python:0.0.1.RELEASE
+            ports: 
+               - containerPort: 5000
+ 
